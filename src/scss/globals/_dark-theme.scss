@@ -1,0 +1,14 @@
+
+@use '../abstracts/colours' as *;
+
+.dark-theme {
+	background-color: $very-dark-blue-bg;
+
+	h1, h2, h3 {
+		color: $white;
+	}
+
+	p {
+		color: $desaturated-blue;
+	}
+}
