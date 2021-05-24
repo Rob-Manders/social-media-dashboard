@@ -1,1 +1,36 @@
 
+@use '../abstracts/colours' as *;
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 700;
+}
+
+p {
+	font-weight: 400;
+}
+
+.container {
+	&--light-theme {
+		h1, h2, h3 {
+			color: $very-dark-blue;
+		}
+
+		p {
+			color: $dark-greyish-blue;
+		}
+	}
+
+	&--dark-theme {
+		h1, h2, h3 {
+			color: $white;
+		}
+
+		p {
+			color: $desaturated-blue;
+		}
+	}
+}
