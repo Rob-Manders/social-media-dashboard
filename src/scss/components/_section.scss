@@ -1,0 +1,15 @@
+
+.section {
+	display: grid;
+	grid-template-columns: repeat(4, 10fr);
+	column-gap: 1rem;
+
+	&--followers {
+		margin: 2.5rem 0;
+		grid-template-rows: 1fr;
+	}
+
+	&--overview {
+		grid-template-rows: repeat(2, 1fr);
+	}
+}

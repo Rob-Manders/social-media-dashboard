@@ -10,12 +10,12 @@
     {
       "src": "images/icon-down.svg",
       "type": "image/svg",
-      "sizes": "16x16"
+      "sizes": "8x4"
     },
     {
       "src": "images/icon-up.svg",
       "type": "image/svg",
-      "sizes": "16x16"
+      "sizes": "8x4"
     },
     {
       "src": "images/icon-facebook.svg",
