@@ -3,16 +3,48 @@
 	$gap: 1.5rem;
 
 	display: grid;
-	grid-template-columns: repeat(4, 10fr);
 	column-gap: $gap;
 	row-gap: $gap;
 
 	&--followers {
 		margin: 2.5rem 0;
-		grid-template-rows: 1fr;
 	}
 
-	&--overview {
-		grid-template-rows: repeat(2, 1fr);
+	@media (max-width: 599px) {
+		grid-template-columns: 1fr;
+
+		&--followers {
+			grid-template-rows: repeat(4, 1fr);
+		}
+
+		&--overview {
+			grid-template-rows: repeat(8, 1fr);
+		}
 	}
+
+	@media (min-width: 600px) {
+		grid-template-columns: repeat(2, 1fr);
+
+		&--followers {
+			grid-template-rows: repeat(2, 1fr);
+		}
+
+		&--overview {
+			grid-template-rows: repeat(4, 1fr);
+		}
+	}
+
+	@media (min-width: 1100px) {
+		grid-template-columns: repeat(4, 1fr);
+
+		&--followers {
+			grid-template-rows: 1fr;
+		}
+
+		&--overview {
+			grid-template-rows: repeat(2, 1fr);
+		}
+	}
+
+	
 }
