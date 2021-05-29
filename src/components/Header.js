@@ -7,7 +7,7 @@ export default function Header({ followers, children }) {
 
 	return (
 		<header className={`header header--${theme}`}>
-			<div className='title'>
+			<div className='header__title'>
 				<h1>Social Media Dashboard</h1>
 				<p>Total Followers: 23,004</p>
 			</div>
