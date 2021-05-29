@@ -6,8 +6,11 @@ export default function ThemeToggler() {
 	const { theme, toggleTheme } = useContext(ThemeContext)
 
 	return (
-		<div className={`themeToggler themeToggler--${theme}`}>
-			<button onClick={() => toggleTheme()}>Toggle Theme</button>
+		<div className={`themeToggler themeToggler--${theme}`} onClick={() => toggleTheme()}>
+			<p> Dark Mode</p>
+			<div className={`themeToggler__switch themeToggler__switch--${theme}`}></div>
+			
+			{/* <button onClick={() => toggleTheme()}>Toggle Theme</button> */}
 		</div>
 	)
 }
