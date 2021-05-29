@@ -1,0 +1,42 @@
+
+@use '../abstracts/colours' as *;
+
+.stat {
+	$gap: 0.5rem;
+
+	position: relative;
+	border-radius: 0.25rem;
+	padding: 1.5rem;
+	overflow: auto;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: $gap;
+	row-gap: $gap;
+
+	> * {
+		margin: 0;
+	}
+
+	&--dark-theme {
+		background-color: $dark-desaturated-blue;
+	}
+
+	&--light-theme {
+		background-color: $light-greyish-blue;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	img,
+	.changeIndicator {
+		margin-left: auto;
+	}
+
+	.changeIndicator {
+		margin-top: auto;
+	}
+}

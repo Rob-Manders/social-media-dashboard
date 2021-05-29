@@ -1,0 +1,26 @@
+
+@use '../abstracts/colours' as *;
+
+.changeIndicator {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+
+	p {
+		margin: 0;
+		margin-left: 0.5rem;
+	}
+
+	&--up {
+		p {
+			color: $lime-green;
+		}
+	}
+
+	&--down {
+		p {
+			color: $bright-red;
+		}
+	}
+}

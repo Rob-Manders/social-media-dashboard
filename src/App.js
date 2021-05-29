@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Section from './components/Section'
 import ThemeToggler from './components/ThemeToggler'
 import Followers from './components/Followers'
+import Stat from './components/Stat'
 
 export default function App() {
    return (
@@ -22,7 +23,14 @@ export default function App() {
                </Section>
                <h2>Overview - Today</h2>
                <Section type='overview'>
-                  
+                  <Stat stat='Page Views' platform='facebook' value={87} prevValue={84} />
+                  <Stat stat='Likes' platform='facebook' value={52} prevValue={84} />
+                  <Stat stat='Likes' platform='instagram' value={5462} prevValue={84} />
+                  <Stat stat='Profile Views' platform='instagram' value={52000} prevValue={84} />
+                  <Stat stat='Retweets' platform='twitter' value={117} prevValue={84} />
+                  <Stat stat='Likes' platform='twitter' value={507} prevValue={84} />
+                  <Stat stat='Likes' platform='youtube' value={107} prevValue={84} />
+                  <Stat stat='Total Views' platform='youtube' value={1407} prevValue={84} />
                </Section>
             </div>
          </Container>
