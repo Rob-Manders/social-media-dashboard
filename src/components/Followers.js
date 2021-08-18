@@ -2,6 +2,7 @@
 import { useContext } from 'react'
 import { ThemeContext } from '../context/Theme'
 import ChangeIndicator from './ChangeIndicator'
+import useLargeStat from '../hooks/useLargeStat'
 
 export default function Followers({ platform, handle, followers, prevFollowers }) {
 	const { theme } = useContext(ThemeContext)
@@ -20,7 +21,7 @@ export default function Followers({ platform, handle, followers, prevFollowers }
 				<p>{handle}</p>
 			</div>
 
-			<h3>{followers}</h3>
+			<h3>{useLargeStat(followers, 10000)}</h3>
 			<p className='followers__subtext'>Followers</p>
 			
 			<ChangeIndicator type='today' value={followers} prevValue={prevFollowers}/>
