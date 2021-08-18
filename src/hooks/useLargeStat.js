@@ -6,7 +6,5 @@ export default function useLargeStat(stat, threshold) {
 		newStat = `${newStat.slice(0, -3)}k`
 	}
 
-	console.log(newStat)
-
 	return newStat
 }
